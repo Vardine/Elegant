@@ -1,0 +1,49 @@
+.title p{
+  font-size:35px;
+  text-transform:uppercase;
+  text-align:center;
+  font-weight:bold;
+}
+.title p:after {
+  content: "";
+  display: block;
+  margin: 0 auto;
+  border-bottom: 2px solid #000;
+  width: 85px;
+  padding-top:75px;
+}
+
+.container{
+  padding:120px 0 95px 0;
+}
+
+.title-left{
+text-transform:uppercase;
+font-size:26px;
+}
+
+.content{
+font-size:23px;
+line-height:28px;
+margin-top:25px;
+}
+
+.skill-content{
+  margin-top:90px;
+
+}
+.left{
+  margin-bottom:40px;
+}
+.progress{
+  margin-bottom:25px;
+}
+.progress-bar{
+  background-color:#005494;
+}
+
+.right p{
+  color:#888888;
+  font-size:13px;
+  margin-bottom:8px;
+}

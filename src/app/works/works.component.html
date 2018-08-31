@@ -1,0 +1,31 @@
+<div class="container">
+  <div class="title">
+    <p>
+      Our work
+    </p>
+  </div>
+  <div class="categories d-flex flex-row justify-content-center ">
+    <ul class="d-flex flex-row justify-content-between category-list">
+      <li><a href="#">All</a></li>
+      <li><a href="#">Branding</a></li>
+      <li><a href="#">Web Design</a></li>
+      <li><a href="#">Mobile Ui</a></li>
+      <li><a href="#">Illustrations</a></li>
+    </ul>
+  </div>
+  <div class="row gallery justify-content-center">
+        <div class="col-xs-6 photo" *ngFor="let x of work_photos" >
+          <a href="#" class="d-block mb-4 h-100 hovereffect">
+            <img class="img-fluid img-thumbnail" src="{{x}}" alt="">
+            <div class="overlay">
+           <h2>Kinderen Planet</h2>
+           <a href="#"><i class="fa fa-check-circle info"></i></a>
+        </div>
+          </a>
+        </div>
+
+      </div>
+      <div class="button d-flex flex-row justify-content-center">
+      <button type="button" class="btn">More</button>
+    </div>
+</div>

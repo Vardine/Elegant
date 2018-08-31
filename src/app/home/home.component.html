@@ -1,0 +1,65 @@
+<div class="container-fluid main">
+<nav class="navbar navbar-expand-md sticky-top">
+  <div class="container">
+    <a class="navbar-brand" href="#">
+      <img src="../assets/img/logo.png"/></a>
+
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item active">
+          <a class="nav-link" routerLink="/" routerLinkActive="active">
+            Hello
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/about" routerLinkActive="active">
+            AboutUs
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/works" routerLinkActive="active">
+            Our Work
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/clients" routerLinkActive="active">
+            Clients
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/services" routerLinkActive="active">
+            Services
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/contact" routerLinkActive="active">
+            Contact Us
+          </a>
+        </li>
+      </ul>
+
+    </div>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+       <span ><img src="assets/img/toggler-icon.png"/></span>
+   </button>
+  </div>
+</nav>
+<div class="container">
+<div class="home-title text-center">
+  <h1>we’re creative agency</h1>
+</div>
+<div class="home-content">
+  <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+Aenean commodo ligula eget dolor. Aenean massa.</p>
+</div>
+<div class="more">
+  <div class="circle"><i class="fa fa-chevron-down"></i></div>
+</div>
+</div>
+</div>
+<app-about></app-about>
+<app-works></app-works>
+<app-clients></app-clients>
+<app-services></app-services>
+<app-skills></app-skills>
+<app-contact></app-contact>
