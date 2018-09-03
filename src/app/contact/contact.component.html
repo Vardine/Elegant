@@ -15,22 +15,22 @@
     </div>
     </div>
     <div class="form-part d-flex justify-content-center">
-    <form class="form " role="form" method="post" id="reused_form">
+    <form class="form-group" role="form" method="post"  name="signForm" #signForm="ngForm"  (submit)="loginUser($event)" novalidate>
               <div class="row">
                   <div class="col-sm-6 form-group">
-                      <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                      <input type="text" class="form-control" ngModel name="name" #name="ngModel" placeholder="Name" required>
                   </div>
                   <div class="col-sm-6 form-group">
-                      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required>
+                      <input type="email" class="form-control" ngModel name="email" #email="ngModel" placeholder="Email" required>
                   </div>
               </div>
               <div class="row">
                   <div class="col-sm-12 form-group">
-                      <textarea class="form-control" type="textarea" name="message" placeholder="Message" id="message" maxlength="6000" rows="7"></textarea>
+                      <textarea class="form-control" type="textarea" ngModel name="message" #message="ngModel" placeholder="Message" maxlength="6000" rows="7"></textarea>
                   </div>
               </div>
               <div class="button d-flex flex-row justify-content-center">
-              <button type="button" class="btn">Send</button>
+              <button type="button" class="btn" type="submit" value="Submit"  [disabled]="!signForm.form.valid" >Send</button>
             </div>
           </form>
         </div>

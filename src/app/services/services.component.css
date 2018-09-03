@@ -50,3 +50,13 @@ padding:105px 0;
   .info{
     font-size:24px;
   }
+  @media (max-width: 768px){
+  .second-part{
+    display:flex;
+    flex-direction:column;
+  },
+  .service_second{
+    margin-bottom:20px;
+  }
+
+  }

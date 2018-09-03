@@ -39,23 +39,19 @@ color:white;
 .social-icons{
   width:230px;
 }
-.form{
+.form-group{
   width:675px;
   margin-top:70px;
 }
 
 input, textarea{
   background: transparent;
-  border-top:#afafaf;
-  border-right:#afafaf;
-  border-left:#afafaf;
-  border-radius:none;
-  position:relative;
 }
-input::-webkit-input-placeholder {
-
-line-height:50px;
-
+input:focus, textarea:focus{
+  background: transparent;
+}
+textarea:focus, input:focus{
+    outline: none;
 }
 .btn{
   text-transform:uppercase;
@@ -66,4 +62,18 @@ line-height:50px;
   height:60px;
   font-size:24px;
   margin-top:50px;
+}
+
+input[type=text],input[type=email],
+textarea {
+    border-radius: 0px;
+    border-top:#afafaf;
+    border-right:#afafaf;
+    border-left:#afafaf;
+
+}
+
+::placeholder{
+  font-style: italic;
+  vertical-align:middle;
 }

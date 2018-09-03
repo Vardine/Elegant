@@ -150,3 +150,12 @@ transition-delay:.2s;
   text-transform:uppercase;
   margin-top:50px;
 }
+@media (max-width: 600px){
+ ul{
+   flex-direction: column !important;
+   align-items:center!important;
+}
+li{
+  margin-bottom:20px;
+}
+}

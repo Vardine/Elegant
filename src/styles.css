@@ -57,11 +57,24 @@ table {
 }
 @media (max-width: 1176px){
 .container {
-      width:980px;
+      width:800px;
 }
 }
 @media (max-width: 590px){
 .container {
       width:320px;
 }
+}
+
+@media (min-width: 1280px){
+.navbar-expand-md .navbar-toggler {
+    display: none;
+};
+.collapse:not(.show) {
+    display: none;
+};
+.navbar-expand-md .navbar-collapse {
+    display: flex !important;
+    flex-basis: auto;
+  }
 }
